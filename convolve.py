@@ -50,7 +50,7 @@ Shown: dict =  {timesObs1AX: [9, 20, 10, 25, 14, 22, 10, 18] # Test Uniform
 
 """
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
         
 class DataInput:
     def __init__(self):
@@ -163,7 +163,7 @@ class DataAnalysis:
 class OutputPlotting:
     def __init__(self, data):
         self.data = data
-
+"""
     def plot(self):
         fig, ax1 = plt.subplots()
         ax2 = ax1.twinx()  
@@ -180,7 +180,7 @@ class OutputPlotting:
         ax1.grid()
         fig.tight_layout() 
         plt.show()
-
+"""
 def main():
     data_input = DataInput()
     data_analysis = DataAnalysis(data_input)
